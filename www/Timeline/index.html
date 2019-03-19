@@ -1,0 +1,25 @@
+{{> head}}
+
+<main>
+       
+        <!-- Testaufbau für Timeline -->
+        
+        {{#section Timeline multiple=true order=-datum}}
+        <div>
+            <!-- {{datum type=date}} -->
+            <a href="{{_permalink}}">
+                <h2>{{Catchprase}}</h2>
+            </a>
+                <h3>{{Untertitel}}</h3>   
+                <a href="{{_permalink}}">
+                {{#if Projektbild}}
+                    {{Projektbild type=image required=false}}
+                {{/if}}
+            </a>
+            <!-- {{Beschreibungstext}} -->
+        </div>
+        {{/section}}
+        
+ </main>
+
+{{> footer}}

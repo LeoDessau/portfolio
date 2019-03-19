@@ -1,0 +1,25 @@
+<html>
+    <head>
+   
+    </head>
+        <body>
+            <main>
+                <div>
+                    <a href="/">    
+                        <h3>back to start</h3>
+                    </a>
+                </div>
+                {{#section Timeline}}
+                <h1>{{Catchprase}}</h1>
+                <h2>{{Untertitel}}</h2> 
+                <h3>{{datum}}</h3>  
+                {{#if Projektbild}}
+                    {{Projektbild type=image required=false}}
+                {{/if}}
+            </a>
+            {{Beschreibungstext type=html}}
+            </main>
+            {{/section }}
+        </body>
+
+</html>
